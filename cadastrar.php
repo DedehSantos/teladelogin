@@ -10,7 +10,7 @@
   </head>
   <body>
       <div id="corpo-form-cad">
-      <h1 id="h1-cad">Cadastrar</h1>
+      <h1 id="h1-cad">CADASTRAR</h1>
      <form method="POST" action="processa.php">
          <input type="text"placeholder ="Nome Completo">
          <input type="text" placeholder="Telefone">

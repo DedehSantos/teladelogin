@@ -11,7 +11,7 @@
   </head>
   <body>
       <div id="corpo-form">
-      <h1>Entrar</h1>
+      <h1>ENTRAR</h1>
      <form method="POST" action="processa.php" >
          <input type="email"placeholder ="Usuário">
          <input type="password" placeholder="Senha">
