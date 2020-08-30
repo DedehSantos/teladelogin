@@ -4,7 +4,7 @@
 } 
 body{
 
-    background-image: url("/img/teladelogin/bg_TelaDeLogin.jpeg");
+    background-image: url(../img/teladelogin/bg_TelaDeLogin.jpeg);
     background-repeat: no-repeat;
     background-position:50% 70% ;
     padding: 0px;
@@ -31,6 +31,7 @@ div#corpo-form{
     margin: 150px auto 0px auto;
 
 }
+
 
 div#corpo-form h1{
     text-align: center;
@@ -72,3 +73,30 @@ a:hover {
  :-ms-input-placeholder {  
     color: white;  
  }
+
+form.cad
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
