@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+body{
+
+    background-image: url("/img/teladelogin/bg_TelaDeLogin.jpeg");
+    background-repeat: no-repeat;
+    background-position:50% 70% ;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: arial;
+}
+input {
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border:1px solid black;
+    font-size: 16pt;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.01);
+    outline: none;
+
+}
+div#corpo-form{
+    /*background-color: red;*/
+    width: 420px;
+    margin: 150px auto 0px auto;
+
+}
+
+div#corpo-form h1{
+    text-align: center;
+    padding: 20px;
+
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+   
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cordofundobtn{
+    background-color: #ff0066;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(241, 247, 245);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: white;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: white;  
+ }
