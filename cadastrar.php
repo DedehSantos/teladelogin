@@ -8,8 +8,8 @@
    
     
   </head>
-  <body >
-      <div id="corpo-form">
+  <body>
+      <div id="corpo-form-cad">
       <h1 id="h1-cad">Cadastrar</h1>
      <form method="POST" action="processa.php">
          <input type="text"placeholder ="Nome Completo">
@@ -17,7 +17,7 @@
          <input type="email" placeholder="Usuário">
          <input type="password" placeholder="Senha">
          <input type="password" placeholder="Confirmar Senha">
-         <input type="submit" value="ACESSAR" class="cordofundobtn">
+         <input type="submit" value="CADASTRAR" class="cordofundobtn">
          
 
      </form>
