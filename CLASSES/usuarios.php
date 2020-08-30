@@ -61,11 +61,12 @@ public $msgErro = "";
         $dado = $sql->fetch();
         session_start();
         $_SESSION['id_usuario'] = $dado['id_usuario']
+        return true;// logado com sucesso
 
      }
      else
      {
-
+      return false; //nao foi possivel logar
 
      }
 

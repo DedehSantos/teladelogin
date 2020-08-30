@@ -1,3 +1,9 @@
+<?php 
+require_once'CLASSES/usuarios.php';
+$u = new Usuarios;
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -22,6 +28,30 @@
 
      </form>
     </div>
+    <?php 
+    //verificar se clicou no botao
+    iseet($_POST['nome'])
+    {
+     $nome = addslashes ($_POST['nome']);
+     $telefone = addslashes ($_POST['telefone']);
+     $email = addslashes ($_POST['email']);
+     $senha = addslashes ($_POST['senha']);
+     $confirmarSenha = addslashes ($_POST['confSenha']);
+     //verificar se esta preenchido
+
+     if(!empty($nome) && !empty($telefone) && !empty($email)&& !empty($senha) && !emply($confirmarSenha))
+      {
+
+         $u->conectar("projeto_login", "localhost", "root", "");
+      } else
+      {
+
+        echo "Preencha todos os campos!"
+      }
+
+    } 
+
+    ?>
     
    
   </body>
