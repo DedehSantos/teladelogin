@@ -7,10 +7,11 @@ private $pdo;
 public $msgErro = ""; //tudo ok
 
 
-  public function conectar($nome, $servidor, $ususario, $senha ){
+  public function conectar($nome, $host, $usuario, $senha ){
       global $pdo; 
-      try {
-        $pdo = new PDO ("mysql:dbname".$nome.";host=".$host,$usuario,$senha);
+      try 
+      {
+        $pdo = new PDO("mysql:dbname=".$nome.";host=".$host,$usuario,$senha);
             
       } catch (PDOException $e) {
           $msgErro = $e->getMenssage();

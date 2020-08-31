@@ -17,20 +17,20 @@ $u = new Usuarios;
   <body>
       <div id="corpo-form-cad">
       <h1 id="h1-cad">CADASTRAR</h1>
-     <form method="POST" action="processa.php">
+     <form method="POST">
          <input type="text" name="nome" placeholder ="Nome Completo" maxlength="30">
          <input type="text" name="telefone" placeholder="Telefone" maxlength="30">
-         <input type="email" name="usuario" placeholder="Usuário" maxlength="40">
+         <input type="email" name="email" placeholder="Usuário" maxlength="40">
          <input type="password" name="senha" placeholder="Senha" maxlength="15">
          <input type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="15">
-         <input type="submit" value="CADASTRAR" class="cordofundobtn">
+         <input type="submit" value="cadastrar" class="cordofundobtn">
          
 
      </form>
     </div>
     <?php 
     //verificar se clicou no botao
-    if(iseet($_POST['nome']))
+    if (isset($_POST['nome']))
     {
      $nome = addslashes ($_POST['nome']);
      $telefone = addslashes ($_POST['telefone']);
@@ -39,7 +39,7 @@ $u = new Usuarios;
      $confirmarSenha = addslashes ($_POST['confSenha']);
      //verificar se esta preenchido
 
-     if(!empty($nome) && !empty($telefone) && !empty($email)&& !empty($senha) && !emply($confirmarSenha))
+     if(!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarSenha))
       {
 
          $u->conectar("projeto_login", "localhost", "root", "");
