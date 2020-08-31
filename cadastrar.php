@@ -1,5 +1,5 @@
 <?php 
-require_once'CLASSES/usuarios.php';
+require_once 'CLASSES/usuarios.php';
 $u = new Usuarios;
 
 ?>
@@ -30,7 +30,7 @@ $u = new Usuarios;
     </div>
     <?php 
     //verificar se clicou no botao
-    iseet($_POST['nome'])
+    if(iseet($_POST['nome']))
     {
      $nome = addslashes ($_POST['nome']);
      $telefone = addslashes ($_POST['telefone']);
@@ -43,10 +43,36 @@ $u = new Usuarios;
       {
 
          $u->conectar("projeto_login", "localhost", "root", "");
+         if($u->msgErro == "")// se esta tudo ok
+         {
+           if ($senha == $confirmarSenha)
+           {
+           if($u->cadastrar($nome, $telefone,$email,$senha))
+           {
+             echo "cadastrado com sucesso! Acesse para entrar";
+           }
+           else
+           {
+             echo "Email já cadastrado!";
+           }
+           }
+           else
+           {
+             echo "senhas e confirmar senha nao correspondem";
+           }
+
+         }
+         else
+         {
+            echo "Erro: ".msgErro;
+
+         }
+
       } else
+
       {
 
-        echo "Preencha todos os campos!"
+        echo "Preencha todos os campos!";
       }
 
     } 
